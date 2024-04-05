@@ -1,3 +1,4 @@
+
 // 내 자신의 생성자를 생성자에서 호출하는 방법.
 public class ThisCall {
 

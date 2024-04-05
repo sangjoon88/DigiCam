@@ -40,38 +40,40 @@
  * 
  */
 
-public class ClassExam01 {
+
+
+
+	public class ClassExam01 {
+		// 필드 >> 객체를 계속 쓸 때 여기에 씀
+		private int a; 
+		private char s; 	
+		private float c; 
+		
+		
+		public static void main(String[] args) {
+			
+			ClassExam01 ce = new ClassExam01();  // 생성자호출 
+			ce.output(1,2);
+			ce.output(3.4);
+			ce.output(11);
+			ce.output();
+
+		}
+		public void output(int a,int b) {
+			System.out.println("a,b");
+		}
+		public void output(double a) {
+			System.out.println("a");
+		}
+		public void output(int a) {
+			System.out.println("int a");
+		}
+		
+		public void output() {
+			System.out.println("Nothing");
+		}
+
+	}
+
 // 필드 >> 객체를 계속 쓸 때 여기에 씀
 
-	private int a;
-	private char s;
-	private float c;
-
-	public static void main(String[] args) {
-
-		ClassExam01 ce = new ClassExam01();
-		ce.output(1, 2);
-		ce.output(3.4);
-		ce.output(11);
-		ce.output();
-
-	}
-
-	public void output(int a, int b) {
-		System.out.println("a,b");
-	}
-
-	public void output(double a) {
-		System.out.println("a");
-	}
-
-	public void output(int a) {
-		System.out.println("int a");
-	}
-
-	public void output() {
-		System.out.println("Nothing");
-	}
-
-// 필드 >> 객체를 계속 쓸 때 여기에 씀
-}
